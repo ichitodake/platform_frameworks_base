@@ -223,7 +223,8 @@ public final class PowerManagerService extends SystemService
     private static final String LAST_REBOOT_PROPERTY = "persist.sys.boot.reason";
 
     // Add button light timeout
-    private static final int BUTTON_ON_DURATION = 5 * 1000;
+    //private static final int BUTTON_ON_DURATION = 5 * 1000;
+    private static final int BUTTON_ON_DURATION = 0;
 
     // File location for last reboot reason
     private static final String LAST_REBOOT_LOCATION = "/data/misc/reboot/last_reboot_reason";

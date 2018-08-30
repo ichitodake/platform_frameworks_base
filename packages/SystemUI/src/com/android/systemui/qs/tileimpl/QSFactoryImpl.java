@@ -44,6 +44,8 @@ import com.android.systemui.qs.tiles.WorkModeTile;
 import com.android.systemui.qs.QSTileHost;
 import com.android.systemui.util.leak.GarbageMonitor;
 
+//import com.android.systemui.qs.tiles.HeadsetTile;
+
 public class QSFactoryImpl implements QSFactory {
 
     private static final String TAG = "QSFactory";
@@ -98,6 +100,8 @@ public class QSFactoryImpl implements QSFactory {
                 return new NightDisplayTile(mHost);
             case "nfc":
                 return new NfcTile(mHost);
+            //case "headset":
+              //  return new HeadsetTile(mHost);
         }
 
         // Intent tiles.
